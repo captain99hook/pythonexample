@@ -4,3 +4,11 @@ python:
 - 2.7
 - 3.4
 script: py.test -v
+
+notifications:
+    webhooks: https://travis-for-jira-prod.toolsplus.app/travis/notifications?token=81811ceb-c483-3c34-90eb-9edece07247b
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_cancel: always
+    on_error: always
